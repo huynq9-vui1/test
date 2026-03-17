@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Bài tập tiểu luận</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/brands.min.css" integrity="sha512-58P9Hy7II0YeXLv+iFiLCv1rtLW47xmiRpC1oFafeKNShp8V5bKV/ciVtYqbk2YfxXQMt58DjNfkXFOn62xE+g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<style type="text/css">
+		body{
+			width: 100%;
+			height: auto;
+			margin: 0 auto;
+			font-family: arial;
+			line-height: 2;
+			background-color: #f9f5f3;
+		}
+		*{
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+		}
+		header{
+			width: 100%;
+			height: 150px;
+			background-color: #f9f5f3;
+			color: #444;
+		}
+		header h2{
+			width: 80%;
+			float: left;
+			font-size: 3em;
+			text-align: center;
+		}
+		header #logo{
+			width: 20%;
+			float: left;
+			height: 150px;
+		}
+		@keyframes colorBlink {
+            0% { color: red; }
+            25% { color: blue; }
+            50% { color: green; }
+            75% { color: blueviolet; }
+            100% { color: red; }
+        }
+
+        .blinking-text {
+            font-size: 1.6em;
+            font-weight: bold;
+            text-align: center;
+            animation: colorBlink 10s infinite;
+        }
+		header h3{
+			width: 80%;
+			float: left;
+			text-align: center;
+		}
+		header h4{
+			float: right;
+			padding: 5px;
+
+		}
+		nav{
+			width: 100%;
+			height: 40px;
+			line-height: 40px;
+			background-color:  #cfe2f3;
+		}
+		nav	ul li{
+			list-style-type: none;
+			float: left;
+			padding: 0 30px;
+			border-right: 1px solid	black;
+		}
+		nav	ul	li:last-child, nav ul li:first-child{
+			border-right:none;
+		}
+		nav ul li:hover{
+			background-color: lightskyblue;
+		}
+		nav	ul li a:hover{
+			color: red;
+		}
+		nav ul li a{
+			text-decoration: none;
+			color: #444	;
+			font-style: 2em;
+		}
+		.fa-house-user{
+			font-style: 2em;
+		}
+		aside{
+			width: 20%;
+			height: auto;
+			float: left;
+			
+		}
+		#left h3{
+			text-align: center;
+		}
+		#left ul li{
+			list-style-type: none;
+			padding: 0 10px;
+			margin: 5px;
+		}
+		#left ul li a:hover{
+			color: red;
+		}
+		#left ul li a{
+			color: black;
+			text-decoration: none;
+		}
+		#left div #th{
+			width: 100%;
+			height: 400px;
+		}
+		section{
+			width: 60%;
+			float: left;
+			height: auto;
+			background-color: gainsboro;
+		}
+		section #nd{
+			text-align: justify;
+			float: left;
+			padding: 10px;
+			margin: 5ox;
+		}
+		section #dau{
+			text-align: center;
+			font-size: 2em;
+			padding: 10px;
+			margin: 5px;
+		}
+		section #anh{
+			width: 95%;
+			height: 300px;
+			padding: 15px;
+			border-radius: 15%;
+		}
+		section  figcaption{
+			text-align: center;
+			width: 90%;
+			padding-left:25px ;
+		}
+		section #thongtin{
+			float: left;
+			color: blueviolet;
+		}
+		section #lienhe{
+			float: left;
+			color: black;
+			padding: 5px;
+			margin: 5px;
+		}
+		#right h4{
+			text-align: center;
+			padding: 10px;
+			margin: 5px;
+			font-size: 1.3em;
+		}
+		#right div{
+			text-align: justify;
+			width: 100%;
+		}
+		#right div #hai{
+			width: 100%;
+			height: 150px;
+		}
+		#right div p{
+			text-align: justify;
+			padding: 10px;
+			margin: 5px;
+		}
+		#right #dua{
+			text-align: center;
+			font-size: 1.2ems;
+		}
+		footer {
+			width: 100%;
+        background-color: #2c3e50;
+        color: white;
+        float: left;
+        text-align: center;
+        padding: 20px 0;
+    	}
+    	.footer-container {
+        display: flex;
+        justify-content: space-around;
+        padding: 20px;
+    	}
+    	.footer-container div {
+        max-width: 300px;
+    	}
+    	.footer-social a {
+        color: #f39c12;
+        text-decoration: none;
+        margin: 0 5px;
+   		 }
+    	.footer-bottom {
+        margin-top: 10px;
+        font-size: 14px;
+    	}
+    	.fa-facebook{
+    		font-size: 2em;
+    	}
+    	.fa-instagram{
+    		font-size: 2em;
+    	}
+    	.fa-twitter{
+    		font-size: 2em;
+    	}
+    	.fa-house-user{
+    		font-size: 1.3em;
+    	}
+	</style>
+	<script type="text/javascript">
+		document.addEventListener("DOMContentLoaded", function() {
+    let nav = document.querySelector("nav");
+    
+    window.addEventListener("scroll", function() {
+        if (window.scrollY > 100) {
+            nav.style.position = "fixed";
+            nav.style.top = "0";
+            nav.style.width = "100%";
+            nav.style.zIndex = "1000";
+            nav.style.backgroundColor = "#cfe2f3"; // Giữ màu nền
+        } else {
+            nav.style.position = "relative"; // Quay lại bình thường khi về đầu trang
+        }
+    });
+});
+
+	</script>
+</head>
+<body>
+<header>
+	<img src="logo.jpg" id="logo">
+	<h2 class="blinking-text">Giới thiệu Điểm đến du lịch Việt Nam</h2>
+	<h3 class="blinking-text">Những địa điểm mà bạn nên đến trong mùa hè này</h3>
+	<h4>Việt Nam đất nước tươi đẹp và đổi mới</h4>
+</header>
+<nav>
+	<ul>
+		<li><a href="#"><i class="fa-solid fa-house-user"></i></a></li>
+		<li><a href="lienket1.html">Du lịch văn hóa – lịch sử</a></li>
+		<li><a href="dulichtamlinh.html">Du lịch tâm linh </a></li>
+		<li><a href="lienket3.html">Du lịch sinh thái</a></li>
+		<li><a href="lienket4.html">Du lịch nghỉ dưỡng</a></li>
+		<li><a href="lienket5.html">Du lịch tự túc</a></li>
+		<li><a href="lienket6.html">Khác</a></li>
+	</ul>
+</nav>
+<aside id="left"> 
+	<h3>Một số công ty du lịch, đặt vé ở Việt Nam</h3>
+	<ul>
+		<li><a href="https://hoabinhtourist.com/">Hòa Bình tourist</a></li>
+		<li><a href="https://www.saigontourist.net/">Sài Gòn tourist</a></li>
+		<li><a href="https://www.blueskytravelvietnam.com/">Blue sky travel Việt Nam</a></li>
+		<li><a href="https://tmgroup.vn/vi">TMG group</a></li>
+		<li><a href="https://www.traveloka.com/vi-vn">Traveloka</a></li>
+	</ul>
+	<div>
+		<img src="ảnh.jpg" id="th">
+	</div>
+</aside>
+<section>
+	<article id="nd">
+		<h4 id="dau">Hòa Bình tourist</h4>
+		<p>Đứng đầu trong danh sách các công ty tour du lịch uy tín không thể không nhắc đến HoaBinh Tourist. Là một trong những công ty du lịch hàng đầu tại Việt Nam, với 16 năm kinh nghiệm trong ngành lữ hành, HoaBinh Tourist đã không ngừng phát triển và mở rộng dịch vụ, trở thành thương hiệu uy tín và được nhiều khách hàng trong và ngoài nước tin tưởng. Công ty không chỉ chú trọng vào chất lượng dịch vụ mà còn đặt sự hài lòng của khách hàng lên hàng đầu, với phương châm “Chất lượng làm nên danh tiếng”.
+		<br>
+		HoaBinh Tourist cung cấp một loạt các dịch vụ du lịch đa dạng và phong phú từ du lịch trong nước, quốc tế, tour teambuilding,… Công ty chuyên tổ chức các tour tham quan tại nhiều địa điểm nổi tiếng trong nước như Hà Nội, Hạ Long, Đà Nẵng, Nha Trang, Phú Quốc và các thành phố lớn khác. Ngoài ra, công ty cũng tổ chức các tour quốc tế đến nhiều quốc gia ở Đông Nam Á như Thái Lan, Campuchia, Lào, Myanmar, Singapore, Malaysia và các điểm đến khác trên toàn thế giới.. </p>
+		<figure >
+			<img src="hoabinhtourist.png" id="anh">
+			<figcaption><i>HoaBinh Tourist luôn mang tới chuyến đi chất lượng nhất cho cả du khách Việt Nam và Quốc tế</i></figcaption>
+		</figure>
+		<p>Ngoài ra, HoaBinh Tourist còn hỗ trợ khách hàng trong việc xin visa, đảm bảo quy trình thuận tiện và nhanh chóng. Đặc biệt, công ty cung cấp dịch vụ thiết kế tour tùy chỉnh theo yêu cầu của khách hàng, từ việc lựa chọn điểm đến, thời gian, đến các hoạt động teambuilding, tham quan và giải trí dành cho cả nhóm lẻ, đoàn gia đình, doanh nghiệp,.. nhằm mang lại sự hài lòng tuyệt đối cho từng đối tượng du khách.</p><br>
+		<h4 id="thongtin"><i>Thông tin liên hệ:</i></h4> <br>
+		<ul id="lienhe">
+			<li><b>Hà Nội</b>: 29 Đoàn Thị Điểm, Quốc Tử Giám, Đống Đ</li>
+			<li><b>Đà Nẵng</b>:  217 Trần Phú, Phước Ninh, Hải Châu</li>
+			<li><b>TP Hồ Chí Minh</b>: 05 Hoa Cau, phường 7, Phú Nhuận</li>
+			<li><b>Hotline</b>:  0913.311.911- 0939.311.911 </li>
+			<li><b>Fanpage</b>: https://www.facebook.com/dulichhoabinh/</li>
+		</ul>
+	</article>
+	<article id="nd">
+		<h4 id="dau">Saigontourist</h4>
+		<p>Saigontourist là công ty tour du lịch uy tín và lâu đời tại Việt Nam, được thành lập từ năm 1975. Với hơn 40 năm kinh nghiệm trong ngành du lịch, Saigontourist đã xây dựng được một thương hiệu mạnh mẽ và đáng tin cậy, không chỉ trong nước mà còn trên thị trường quốc tế. Công ty luôn nỗ lực cải tiến và đa dạng hóa dịch vụ để đáp ứng nhu cầu ngày càng cao của du khách.
+		<br>
+		Saigontourist cung cấp các tour du lịch trong nước và quốc tế chất lượng cao, bao gồm các tour tham quan, nghỉ dưỡng, du lịch mạo hiểm và khám phá văn hóa. Công ty cũng tổ chức các dịch vụ tổ chức sự kiện, hội nghị và triển lãm trong và ngoài nước, đảm bảo mang lại sự chuyên nghiệp và thành công cho mọi sự kiện. Với dịch vụ khách hàng tận tâm và chất lượng dịch vụ vượt trội, Saigontourist luôn là lựa chọn hàng đầu của nhiều du khách. </p>
+		<figure >
+			<img src="saigontourisr.png" id="anh">
+			<figcaption><i>Tour khám phá văn hóa sông nước đầy độc đáo cho du khách</i></figcaption>
+		</figure>
+		<h4 id="thongtin"><i>Thông tin liên hệ:</i></h4> <br>
+		<ul id="lienhe">
+			<li><b>Địa chỉ</b>: 45 Lê Thánh Tôn, quận 1, thành phố Hồ Chí Minh</li>
+			<li><b>Hotline</b>: 19001808</li>
+		</ul>
+	</article> <br>
+	<article></article>
+	<article id="nd">
+		<h4 id="dau">BlueSkyTravel</h4>
+		<p>Blue Sky Travel là một trong những công ty du lịch hàng đầu tại Đông Nam Á, với hơn 15 năm kinh nghiệm trong ngành lữ hành. Blue Sky Travel với sự chuyên nghiệp và tận tâm trong dịch vụ, cùng với những trải nghiệm du lịch phong phú và đa dạng, luôn là lựa chọn hàng đầu của nhiều du khách trong và ngoài nước.
+		<br>
+		Blue Sky Travel tổ chức các tour tham quan tại nhiều địa điểm nổi tiếng trong nước như Hà Nội, Hạ Long, Đà Nẵng, Nha Trang, Phú Quốc và các thành phố lớn khác. Ngoài ra, công ty cũng tổ chức các tour quốc tế đến nhiều quốc gia ở Đông Nam Á như Thái Lan, Campuchia, Lào, Myanmar, Singapore, Malaysia và các điểm đến khác trên toàn thế giới. Đội ngũ nhân viên của Blue Sky Travel không ngừng được đào tạo để ngày càng chuyên nghiệp – nhiệt tình – vui vẻ – tận tụy trong việc phục vụ khách hàng. </p>
+		<figure >
+			<img src="bluesky.png" id="anh">
+			<figcaption><i>Blue Sky Travel là một trong những công ty du lịch hàng đầu tại Đông Nam Á</i></figcaption>
+		</figure>
+		<h4 id="thongtin"><i>Thông tin liên hệ:</i></h4> <br>
+		<ul id="lienhe">
+			<li><b>Địa chỉ</b>: 92E Nguyễn Hữu Cảnh, Phường 22, Quận Bình Thạnh, TP Hồ Chí Minh</li>
+			<li><b>Hotline</b>: (028) 3827 7007</li>
+		</ul>
+	</article>
+	<article id="nd">
+		<h4 id="dau">TMG Travel</h4>
+		<p>Traveloka là một nền tảng đặt dịch vụ du lịch trực tuyến hàng đầu tại Đông Nam Á, cung cấp nhiều tiện ích như đặt vé máy bay, khách sạn, tour du lịch, vé vui chơi, thuê xe và bảo hiểm du lịch. Được thành lập vào năm 2012 tại Indonesia, Traveloka nhanh chóng mở rộng và trở thành sự lựa chọn phổ biến cho du khách trong khu vực.
+		<br>
+		Với giao diện thân thiện, hệ thống thanh toán linh hoạt và nhiều chương trình khuyến mãi hấp dẫn, Traveloka giúp du khách dễ dàng lên kế hoạch và đặt dịch vụ du lịch một cách thuận tiện. Công ty không chỉ tập trung vào chất lượng dịch vụ mà còn cam kết mang đến trải nghiệm tốt nhất cho khách hàng, từ đặt vé đến hỗ trợ trong suốt hành trình. </p>
+		<figure >
+			<img src="traveloka.png" id="anh">
+			<figcaption><i>Trải nghiệm cùng Traveloka</i></figcaption>
+		</figure>
+		<h4 id="thongtin"><i>Thông tin liên hệ:</i></h4> <br>
+		<ul id="lienhe">
+			<li><b>Trụ sở chính</b>: Indonesia</li>
+			<li><b>Website</b>: www.traveloka.com</li>
+		</ul>
+	</article>
+</section>
+<aside id="right">
+	<h4>Một số thông tin khác</h4>
+	<!-- <br> -->
+	<div >
+		<img src="thathinh.png" id="hai">
+		<p id="dua"><b>Về với thanh xuân</b></p>
+		<p>"Đưa em về thanh xuân, nơi những ngày nắng dịu dàng vương trên mái tóc, nơi những tiếng cười trong veo vang vọng giữa trời xanh. Ở đó, ta từng ngây ngô với những giấc mơ lớn lao, từng tin rằng chỉ cần nắm tay nhau là có thể đi qua mọi bão giông. Thanh xuân ấy, có thể không hoàn hảo, nhưng mãi mãi là khoảng trời đẹp nhất trong tim..." 🌿💫</p>
+	</div>
+	<hr> <br>
+	<div>
+		<img src="channgon.png" id="hai">
+		<p id="dua"><b>Tự do - Khám phá</b></p>
+		<p>Bức ảnh gợi lên cảm giác tự do và khám phá, với hình ảnh một người phụ nữ đứng trước ô cửa kính sân bay, hướng mắt về bầu trời rộng lớn. Dòng chữ trên ảnh nhắc nhở rằng du lịch không chỉ là về điểm đến hay bạn đồng hành, mà quan trọng nhất là cảm giác hạnh phúc và thỏa mãn trên hành trình. <br>  
+
+		✨ "Mỗi chuyến đi là một hành trình tìm lại chính mình. Không quan trọng bạn đi cùng ai, điều quan trọng là bạn cảm thấy bình yên và tràn đầy năng lượng với những bước chân phía trước." ✨</p>
+	</div>
+</aside>
+<footer>
+	  <div class="footer-container">
+        <div class="footer-about">
+            <h3>Về Chúng Tôi</h3>
+            <p>Chúng tôi mang đến những trải nghiệm du lịch tuyệt vời nhất, giúp bạn khám phá thế giới theo cách riêng.</p>
+        </div>
+        <div class="footer-contact">
+            <h3>Liên Hệ:</h3>
+            <p>Email: nguyenhuy1900505@gmail.com</p>
+            <p>Hotline: 0327074871</p>
+        </div>
+        <div class="footer-social">
+            <h3>Theo Dõi Chúng Tôi</h3>
+            <a href="https://www.facebook.com/shar"><i class="fa-brands fa-facebook"></i></a> | <a href="http://www.instagram.com/lmh_14thg3"><i class="fa-brands fa-instagram"></i></a> | <a href="#"><i class="fa-brands fa-twitter"></i></a>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2025 Travel Website. All Rights Reserved.</p>
+    </div>
+</footer>
+</body>
+</html>
